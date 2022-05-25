@@ -1,22 +1,26 @@
 <?php
+require_once './startup/boot.php';
+require_once './controllers/SiteController.php';
+require_once './controllers/AuthController.php';
+
 
 if(!isset($_GET['c'], $_GET['a']))
 {
-    
+    // omissão, enviar para site
     $controller = new SiteController();
     $controller->index();
 }
 else
 {
+    // existem parametros definidos
+    $c = $_GET['c'];
+    $a = $_GET['a'];
 
-    $controller = $_GET['c'];
-    $action = $_GET['a'];
-
-    switch ($controller)
+    switch ($c)
     {
         case "login":
-            $controller = new LoginController();
-            switch ($action)
+            $controller = new AuthController();
+            switch ($a)
             {
                 case "index":
                     $controller->index();
@@ -31,19 +35,6 @@ else
             }
             break;
 
-        case "plano":
-            $controller = new PlanoController();
-            switch ($action)
-            {
-                case "index":
-                    $controller->index();
-                    break;
-
-                case "calcular":
-                    $controller->calcular();
-                    break;
-            }
-            break;
 
         case "site":
             $controller = new SiteController();
