@@ -13,8 +13,21 @@ class BaseController
         {
             $username = $auth ->getUsername();
             $userRole = $auth ->getRole(); // 3 if para cada role criada
+
         }
-        require_once './views/layout/header.php';
+
+        if($_SESSION['role'] == 'administrador')
+        {
+            require_once './views/layout/headerAdministrador.php';
+        }
+        elseif ($_SESSION['role'] == 'cliente')
+        {
+            require_once './views/layout/headerCliente.php';
+        }
+        elseif ($_SESSION['role'] == 'funcionario')
+        {
+            require_once './views/layout/headerFuncionario.php';
+        }
         require_once './views/' . $controllerPrefix . '/' . $viewName . '.php';
         require_once './views/layout/footer.php';
     }

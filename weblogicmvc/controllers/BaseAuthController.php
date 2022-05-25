@@ -18,8 +18,8 @@ class BaseAuthController extends BaseController {
         $role = $auth->getRole();
         $validRole = in_array($role, $roles);
 
-        if(!$auth->isLoggedin()){ // colocar a Role aqUi  e remover (!$validRole)
+        if(!$validRole)//!$auth->isLoggedin()){ // colocar a Role aqUi  e remover (!$validRole)
             header('location: ./router.php?'.INVALID_ACCESS_ROUTE);
         }
-    }
+
 }

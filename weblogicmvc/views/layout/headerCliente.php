@@ -16,15 +16,12 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./router.php">Home</a>
                 </li>
+
                 <li class="nav-item">
                     <?php
                     if(isset($username))
                     {
-                        echo '<a class="nav-link" href="./router.php?c=login&a=logout">Logout('.$username.')</a>';
-                    }
-                    else
-                    {
-                        echo '<a class="nav-link" href="./router.php?c=login&a=index">Login</a>';
+                        echo '<a class="nav-link" href="./router.php?c=plano&a=index">Lista Faturas</a>';
                     }
                     ?>
                 </li>
@@ -32,28 +29,21 @@
                     <?php
                     if(isset($username))
                     {
-                        echo '<a class="nav-link" href="./router.php?c=plano&a=index">Plano Pagamentos</a>';
+                        echo '<a class="nav-link" href="./router.php?c=plano&a=index">Fatura Individual</a>';
                     }
                     ?>
                 </li>
                 <li class="nav-item">
-                    <?php
-                    if(isset($username))
-                    {
-                        echo '<a class="nav-link" href="./router.php?c=book&a=index">Books</a>';
-                    }
-                    ?>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                <?php
+                if(isset($username))
+                {
+                    echo '<a class="nav-link" href="./router.php?c=login&a=logout">Logout('.$username.')</a>';
+                }
+                else
+                {
+                    echo '<a class="nav-link" href="./router.php?c=login&a=index">Login</a>';
+                }
+                ?>
                 </li>
             </ul>
         </div>

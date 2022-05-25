@@ -16,15 +16,12 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./router.php">Home</a>
                 </li>
+
                 <li class="nav-item">
                     <?php
                     if(isset($username))
                     {
-                        echo '<a class="nav-link" href="./router.php?c=login&a=logout">Logout('.$username.')</a>';
-                    }
-                    else
-                    {
-                        echo '<a class="nav-link" href="./router.php?c=login&a=index">Login</a>';
+                        echo '<a class="nav-link" href="./router.php?c=plano&a=index">Produtos</a>';
                     }
                     ?>
                 </li>
@@ -32,7 +29,15 @@
                     <?php
                     if(isset($username))
                     {
-                        echo '<a class="nav-link" href="./router.php?c=plano&a=index">Plano Pagamentos</a>';
+                        echo '<a class="nav-link" href="./router.php?c=plano&a=index">Emitir Fatura</a>';
+                    }
+                    ?>
+
+                <li class="nav-item">
+                    <?php
+                    if(isset($username))
+                    {
+                        echo '<a class="nav-link" href="./router.php?c=plano&a=index">Clientes</a>';
                     }
                     ?>
                 </li>
@@ -40,20 +45,44 @@
                     <?php
                     if(isset($username))
                     {
-                        echo '<a class="nav-link" href="./router.php?c=book&a=index">Books</a>';
+                        echo '<a class="nav-link" href="./router.php?c=plano&a=index">Taxa IVA</a>';
                     }
                     ?>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <?php
+                    if(isset($username))
+                    {
+                        echo '<a class="nav-link" href="./router.php?c=plano&a=index">Empresa</a>';
+                    }
+                    ?>
+                </li>
+                <li class="nav-item">
+                    <?php
+                    if(isset($username))
+                    {
+                        echo '<a class="nav-link" href="./router.php?c=plano&a=index">Historico das Faturas</a>';
+                    }
+                    ?>
+                </li>
+                <li class="nav-item">
+                    <?php
+                    if(isset($username))
+                    {
+                        echo '<a class="nav-link" href="./router.php?c=plano&a=index">Alterar Dados</a>';
+                    }
+                    ?>
+                </li>
+                <?php
+                if(isset($username))
+                {
+                    echo '<a class="nav-link" href="./router.php?c=login&a=logout">Logout('.$username.')</a>';
+                }
+                else
+                {
+                    echo '<a class="nav-link" href="./router.php?c=login&a=index">Login</a>';
+                }
+                ?>
                 </li>
             </ul>
         </div>
