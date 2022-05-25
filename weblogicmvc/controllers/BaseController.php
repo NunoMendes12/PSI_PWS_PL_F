@@ -16,18 +16,22 @@ class BaseController
 
         }
 
+/*
         if($_SESSION['role'] == 'administrador')
         {
             require_once './views/layout/headerAdministrador.php';
         }
-        elseif ($_SESSION['role'] == 'cliente')
+        if ($_SESSION['role'] == 'cliente')
         {
             require_once './views/layout/headerCliente.php';
         }
-        elseif ($_SESSION['role'] == 'funcionario')
+        if ($_SESSION['role'] == 'funcionario')
         {
             require_once './views/layout/headerFuncionario.php';
         }
+*/
+
+        require_once './views/layout/headerAdministrador.php';
         require_once './views/' . $controllerPrefix . '/' . $viewName . '.php';
         require_once './views/layout/footer.php';
     }
