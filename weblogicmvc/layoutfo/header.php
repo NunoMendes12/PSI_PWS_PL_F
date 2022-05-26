@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Fatura+</title>
+    <title><?= APP_NAME ?></title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="public/Fo/assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -27,20 +28,31 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Home</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Login">Login</a></li>
-
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./router.php">Home</a>
+                </li>
+                <li class="nav-item">
+                <?php
+                if(isset($username))
+                {
+                    echo '<a class="nav-link" href="./router.php?c=login&a=logout">Logout('.$username.')</a>';
+                }
+                else
+                {
+                    echo '<a class="nav-link" href="./router.php?c=login&a=index">Login</a>';
+                }
+                ?>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
+
 <!-- Masthead-->
 <header class="masthead bg-primary text-white text-center">
     <div class="container d-flex align-items-center flex-column">
         <!-- Masthead Avatar Image-->
-        <img class="masthead-avatar mb-5" src="public/Fo/assets/img/avataaars.svg" alt="..." />
+        <img class="masthead-avatar mb-5" src="public/Fo/assets/img/icon.png" alt="..." />
         <!-- Masthead Heading-->
         <h1 class="masthead-heading text-uppercase mb-0">Fatura Plus</h1>
         <!-- Icon Divider-->
