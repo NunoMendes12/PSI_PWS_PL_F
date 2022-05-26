@@ -32,9 +32,9 @@ class BaseController
         }
 */
 
-        require_once './views/layout/headerAdministrador.php';
-        require_once './views/' . $controllerPrefix . '/' . $viewName . '.php';
-        require_once './views/layout/footer.php';
+        require_once './layoutfo/header.php';
+        //require_once './views/' . $controllerPrefix . '/' . $viewName . '.php';
+        require_once './layoutfo/footer.php';
     }
 
     protected function redirectToRoute($controllerPrefix, $action)
