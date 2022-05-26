@@ -14,6 +14,7 @@ class BaseController
             $username = $auth ->getUsername();
             $userRole = $auth ->getRole(); // 3 if para cada role criada
 
+
         }
 
 /*

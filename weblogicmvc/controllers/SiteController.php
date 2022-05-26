@@ -7,4 +7,9 @@ class SiteController extends BaseController
     {
         $this->makeView('site', 'index');
     }
+
+
+
+
+
 }
