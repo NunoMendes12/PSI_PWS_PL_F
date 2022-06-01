@@ -9,7 +9,4 @@ class SiteController extends BaseController
     }
 
 
-
-
-
 }
