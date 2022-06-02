@@ -11,6 +11,13 @@
     <pharConfigPath>$PROJECT_DIR$/weblogicmvc/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -38,6 +45,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -65,6 +73,8 @@
       <workItem from="1654071448792" duration="386000" />
       <workItem from="1654093763291" duration="13073000" />
       <workItem from="1654107116201" duration="4920000" />
+      <workItem from="1654120859938" duration="288000" />
+      <workItem from="1654164886753" duration="6423000" />
     </task>
     <servers />
   </component>
