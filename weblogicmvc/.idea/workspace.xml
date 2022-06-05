@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="85aff5ee-a928-45e5-b70f-237656dddb12" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblogicmvc/controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/weblogicmvc/controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblogicmvc/controllers/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/weblogicmvc/controllers/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblogicmvc/views/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/weblogicmvc/views/admin/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblogicmvc/views/cliente/headerCliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/weblogicmvc/views/cliente/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblogicmvc/views/cliente/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/weblogicmvc/views/cliente/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblogicmvc/views/funcionario/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/weblogicmvc/views/funcionario/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblogicmvc/views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/weblogicmvc/views/site/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblogicmvc/views/layout/front/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/weblogicmvc/views/layout/front/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +84,7 @@
       <workItem from="1654120859938" duration="288000" />
       <workItem from="1654164886753" duration="6423000" />
       <workItem from="1654451730267" duration="1952000" />
+      <workItem from="1654453842737" duration="149000" />
     </task>
     <servers />
   </component>
