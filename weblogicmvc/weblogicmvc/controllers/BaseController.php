@@ -18,7 +18,7 @@ class BaseController
                 require_once './views/admin/index.php';
             }
             if ($_SESSION['role'] == 'cliente') {
-                require_once './views/site/clienteIndex.php';
+                require_once './views/cliente/index.php';
             }
             if ($_SESSION['role'] == 'funcionario') {
                 require_once './views/funcionario/index.php';

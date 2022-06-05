@@ -26,11 +26,11 @@ class AuthController extends BaseController
 
                 if ($_SESSION['role'] == 'administrador') {
                     $this->redirectToRoute('admin','index');
-                    require_once './views/admin/index.php';
+                    require_once './views/admin/header.php';
                 }
                 if ($_SESSION['role'] == 'cliente') {
-
-                    require_once './views/layout/headerCliente.php';
+                    $this->redirectToRoute('cliente','index');
+                    require_once './views/cliente/header.php';
                 }
                 if ($_SESSION['role'] == 'funcionario') {
                     $this->redirectToRoute('funcionario','index');

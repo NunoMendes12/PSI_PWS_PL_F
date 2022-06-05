@@ -45,7 +45,12 @@
                 <a href="#" class="nav-link">Home</a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="#" class="nav-link">Logout</a>
+                <?php
+                if(isset($username))
+                {
+                    echo '<a href="./router.php?c=login&a=logout" class="nav-link">Logout</a>';
+                }
+                ?>
             </li>
         </ul>
 
@@ -81,10 +86,9 @@
                     <?php
                     if(isset($username))
                     {
-                        echo '<a href="#" class="d-block">A('.$username.')</a>';
+                        echo '<a href="#" class="d-block">'.$username.'</a>';
                     }
                     ?>
-                    <a href="#" class="d-block">Nome</a>
                 </div>
             </div>
 
@@ -95,10 +99,10 @@
                          with font-awesome or any other icon font library -->
 
                     <li class="nav-item">
-                        <a href="pages/widgets.html" class="nav-link">
-                            <i class="nav-icon fas fa-th"></i>
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-copy"></i>
                             <p>
-                                Lista Faturas
+                                Lista das Faturas
                             </p>
                         </a>
                     </li>
@@ -110,6 +114,7 @@
                             </p>
                         </a>
                     </li>
+
             </nav>
             <!-- /.sidebar-menu -->
         </div>
@@ -156,9 +161,5 @@
 <script src="public/back/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
 <script src="public/back/dist/js/adminlte.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="public/back/dist/js/demo.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="public/back/dist/js/pages/dashboard.js"></script>
 </body>
 </html>
