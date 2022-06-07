@@ -1,6 +1,6 @@
 <?php
 require_once './models/Fatura.php';
-
+require_once './controllers/BaseAuthController.php';
 
 //Igual ao Book
 
