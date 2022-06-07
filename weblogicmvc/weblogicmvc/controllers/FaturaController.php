@@ -1,14 +1,15 @@
 <?php
+require_once './models/Fatura.php';
 
 //Igual ao Book
 
-	class FaturaController //extends BaseAuthController
+	class FaturaController extends BaseController
 	{
 
 		public function index()
         {
-
-			$this->makeView('fatura', 'index');
+            $faturas = Fatura::all();
+            $this->makeView('fatura', 'index',['faturas' => $faturas]);
 
 		}
 
