@@ -43,12 +43,16 @@ else
                     $controller->index();
                     break;
 
+                case "create":
+                    $controller->create();
+                    break;
             }
             break;
 
             case"funcionario":
              $controller = new AuthController();
                 $controller->index();
+                break;
 
 
         case"admin":

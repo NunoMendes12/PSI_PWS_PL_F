@@ -4,7 +4,7 @@ require_once './models/Fatura.php';
 
 //Igual ao Book
 
-	class FaturaController extends BaseAuthController // erro aqui
+	class FaturaController extends BaseAuthController
 	{
 
 		public function index()
@@ -14,13 +14,21 @@ require_once './models/Fatura.php';
 
 		}
 
-		public function create()
+		public function create($idcliente)
         {
+            if($idcliente==null){
+                $this->makeView('fatura', 'create');
+
+            }else
+
+            $fatura = new Fatura($_POST);
+
+        
 
 
 		}
 
-        public function store($idcliente)
+        public function store($idFatura)
         {
             //gravar Fatura( preencher todos os campos da fatura)
             //redirect -> minhaFatura / create + id Fatura

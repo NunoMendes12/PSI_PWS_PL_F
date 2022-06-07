@@ -116,7 +116,7 @@
 
                     </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="#" class="nav-link" target="_blank">
                                 <i class="nav-icon fas fa-copy"></i>
                                 <p>
                                     Historico das Faturas
@@ -124,7 +124,7 @@
                             </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="router.php?c=fatura&a=index" class="nav-link" role= "button">
                             <i class="nav-icon fas fa-copy"></i>
                             <p>
                                 Clientes

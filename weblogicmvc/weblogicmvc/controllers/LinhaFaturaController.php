@@ -3,7 +3,7 @@
 
 // igual ao chaphters
 
-class LinhaFaturaController
+class LinhaFaturaController extends BaseAuthController
 {
 
     public function index()
@@ -11,10 +11,14 @@ class LinhaFaturaController
 
     }
 
-    public function create($idFatura)//,[$idProduto])
+    public function create($idFatura, $idProduto)//,[$idProduto])
     {
-
-    }
+        if($idProduto==null){
+            $this-> makeView('fatura', 'index');
+        }
+        else
+            $linhaFatura= new LinhaFatura($_POST);
+        idProduto = $idProduto;
 
     public function store($id)
     {

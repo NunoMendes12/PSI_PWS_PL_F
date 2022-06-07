@@ -8,6 +8,9 @@ class Fatura extends \ActiveRecord\Model
         array('ivatotal'),
         array('estado')
     );
-    
+        
+        static $has_many = array(
+        array('linhaFaturas')
+            );
 
 }
