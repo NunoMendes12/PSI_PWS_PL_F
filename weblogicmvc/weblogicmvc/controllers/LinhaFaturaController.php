@@ -11,6 +11,8 @@ class LinhaFaturaController extends BaseAuthController
 
     }
 
+
+
     public function create($idFatura, $idProduto)//,[$idProduto])
     {
         if($idProduto==null){
@@ -18,7 +20,8 @@ class LinhaFaturaController extends BaseAuthController
         }
         else
             $linhaFatura= new LinhaFatura($_POST);
-        idProduto = $idProduto;
+
+        $idProduto = $idProduto;
 
     public function store($id)
     {
