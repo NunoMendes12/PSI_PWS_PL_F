@@ -33,7 +33,7 @@ class AuthController extends BaseController
                     require_once './views/cliente/header.php';
                 }
                 if ($_SESSION['role'] == 'funcionario') {
-                    $this->redirectToRoute('funcionario','index');
+                    $this->makeView('funcionario','index');
                     require_once './views/funcionario/header.php';
                 }
 

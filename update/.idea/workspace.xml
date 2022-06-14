@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="40439ba3-e6c1-4627-8317-f0ba04f292a9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/php-activerecord/php-activerecord" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="283c2H1Gt2I13mSEVt8AUTyinZY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PSI_PWS_PL_F" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\ficha07\public" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40439ba3-e6c1-4627-8317-f0ba04f292a9" name="Changes" comment="" />
+      <created>1650448500747</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650448500747</updated>
+      <workItem from="1650448501888" duration="6705000" />
+      <workItem from="1650535579470" duration="62000" />
+      <workItem from="1650535644340" duration="179000" />
+      <workItem from="1650535826154" duration="1515000" />
+      <workItem from="1650538335548" duration="8000" />
+      <workItem from="1650538354191" duration="13000" />
+      <workItem from="1650538374068" duration="16000" />
+      <workItem from="1650538406721" duration="144000" />
+      <workItem from="1651141023119" duration="5754000" />
+      <workItem from="1651658263803" duration="6920000" />
+      <workItem from="1651745593135" duration="6078000" />
+      <workItem from="1652262805240" duration="6126000" />
+      <workItem from="1652350389224" duration="6063000" />
+      <workItem from="1652778727503" duration="4000" />
+      <workItem from="1652868441458" duration="4730000" />
+      <workItem from="1652955809397" duration="1048000" />
+      <workItem from="1653473409244" duration="26000" />
+      <workItem from="1653473492652" duration="441000" />
+      <workItem from="1653754710332" duration="1610000" />
+      <workItem from="1654079781358" duration="192000" />
+      <workItem from="1654080051541" duration="23000" />
+      <workItem from="1654080901554" duration="2861000" />
+      <workItem from="1654092771776" duration="830000" />
+      <workItem from="1654093737227" duration="23000" />
+      <workItem from="1654102633462" duration="1408000" />
+      <workItem from="1654105574572" duration="1390000" />
+      <workItem from="1654107100883" duration="12000" />
+      <workItem from="1654113551241" duration="748000" />
+      <workItem from="1654706613344" duration="3696000" />
+      <workItem from="1654774295627" duration="757000" />
+      <workItem from="1654784198817" duration="788000" />
+      <workItem from="1654785034016" duration="9000" />
+      <workItem from="1654785044766" duration="3058000" />
+      <workItem from="1654788233270" duration="13000" />
+      <workItem from="1654962262381" duration="16441000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

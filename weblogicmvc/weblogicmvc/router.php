@@ -37,10 +37,10 @@ else
             break;
 
         case "fatura":
-            $controller = new FaturaController();
+            $faturaController = new FaturaController();
             switch ($a) {
                 case "index":
-                    $controller->index();
+                    $faturaController->index();
                     break;
 
                 case "create":
