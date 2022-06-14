@@ -6,7 +6,7 @@ require_once './models/Auth.php';
 class BaseAuthController extends BaseController
 {
 
-    protected function loginFilter()
+    public function loginFilter()
     {
         $auth=new Auth();
         if(!$auth->isLoggedin()){
@@ -14,7 +14,7 @@ class BaseAuthController extends BaseController
         }
     }
 
-    protected function loginFilterbyRole($roles=[])
+    public function loginFilterbyRole($role)
     {
         $auth=new Auth();
         $role = $auth->getRole();
