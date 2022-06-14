@@ -47,7 +47,6 @@ else
                     break;
                 case "create":
                     $controller->create($_GET['id']);
-                case "selectCliente"
             }
             break;
 
@@ -61,11 +60,6 @@ else
                     break;
                 case "create":
                     $controller->create($_GET['id']);
-                    break;
-                case "store":
-                    $controller->store($_GET['id']);
-                    break;
-                case
             }
             break;
 

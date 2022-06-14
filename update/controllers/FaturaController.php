@@ -8,7 +8,7 @@ class FaturaController extends BaseAuthController
     public function index()
     {
         //$fatura = Fatura::all();
-        $this->makeView('fatura','index');//,['fatura'=>$faturas]);
+        $this->makeView('fatura','create');//,['fatura'=>$faturas]);
 
     }
 
@@ -29,6 +29,8 @@ class FaturaController extends BaseAuthController
         $dateToday = Carbon::now();
 
         $user = User::find([$idcliente]);
-    }
+
+        
+   }
 
 }
