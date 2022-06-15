@@ -2,7 +2,7 @@
 <?php 	
 
 
-	class Empresa extends BaseAuthController
+	class Empresa extends \ActiveRecord\Model 
 
 
  ?>

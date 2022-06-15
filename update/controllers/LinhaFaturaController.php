@@ -36,9 +36,7 @@ class LinhaFaturaController extends BaseAuthController
             $this->redirectToRoute('linhaFatura', 'create', ['id' => $idFatura]);
         } else{
             $this ->makeView('linhaFatura', 'create', ['id' => $idFatura]);
-        }
-
-        
+        }      
    }
 
    public function edit($idLinhaFatura) 
@@ -49,10 +47,36 @@ class LinhaFaturaController extends BaseAuthController
          } 
          else 
          {
-            
-
             $this-> makeView('linhaFatura', 'edit',//['book'=>$book]);
          }
+   }
+
+   public function update($id)
+   {
+        $users = User::find([$id]);
+        $users-> update_attributes($_POST);
+        if ($users->is_valid()) {
+            $users->save();
+            $this->redirectToRoute('user','index');
+
+        } else {
+            $roles = Role::all();
+            $this->makeView('user', 'edit'. ['users' => $users, 'roles' ])
+        }
+
+   }
+
+   public function show($id)
+   {    
+
+        $user::find([$id]);
+        if (is_null($user)) {
+            
+        }else
+        {
+            $this->makeView('user','show', ['user' => $user]);
+        }
+
    }
 
 }
