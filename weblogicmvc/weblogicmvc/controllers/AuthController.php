@@ -37,19 +37,6 @@ class AuthController extends BaseController
                     require_once './views/funcionario/header.php';
                 }
 
-
-                /*switch ($_SESSION['role']) {
-                   case "administrador":
-                    require_once './views/admin/index.php';
-                    break;
-                    case "funcionario":
-                        require_once './views/funcionario/index.php';
-                    break;
-                    case "cliente":
-                        require_once './views/cliente/index.php';
-                    break;
-                }
-            }*/
             }
         }
         else
@@ -58,8 +45,6 @@ class AuthController extends BaseController
         }
 
     }
-
-
 
     public function logout()
     {

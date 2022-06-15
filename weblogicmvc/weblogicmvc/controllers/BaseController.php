@@ -11,17 +11,16 @@ class BaseController
 
         if ($auth->isLoggedIn()) {
             $username = $auth->getUsername();
-            $userRole = $auth->getRole(); // 3 if para cada role criada
-
+            $userRole = $auth->getRole();
 
             if ($_SESSION['role'] == 'administrador') {
-                require_once './views/admin/index.php';
+                require_once './views/admin/header.php';
             }
             if ($_SESSION['role'] == 'cliente') {
-                require_once './views/cliente/index.php';
+                require_once './views/cliente/header.php';
             }
             if ($_SESSION['role'] == 'funcionario') {
-                require_once './views/funcionario/index.php';
+                require_once './views/funcionario/header.php';
             }
 
 
@@ -30,7 +29,6 @@ class BaseController
             require_once './views/' . $controllerPrefix . '/' . $viewName . '.php';
             require_once './views/layout/front/footer.php';
         }
-
 
     }
 

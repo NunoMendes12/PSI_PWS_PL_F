@@ -3,7 +3,7 @@ require_once './startup/boot.php';
 require_once './controllers/SiteController.php';
 require_once './controllers/AuthController.php';
 require_once './controllers/FaturaController.php';
-
+require_once './controllers/ProductController.php';
 
 
 
@@ -44,30 +44,30 @@ else
                     break;
 
                 case "create":
-                    $controller->create();
+                    $faturaController->create();
                     break;
             }
             break;
-
-            case"funcionario":
-             $controller = new AuthController();
-                $controller->index();
-                break;
-
-
-        case"admin":
-            $controller = new AuthController();
-            $controller->index();
+        case "produto":
+            $controller = new ProductController();
+            switch ($a)
+            {
+                case "index":
+                    $controller->index();
+                    break;
+                case "create":
+                    $controller->create();
+                    break;
+                case "store":
+                    $controller->store();
+            }
             break;
-
 
 
         case "site":
             $controller = new SiteController();
             $controller->index();
             break;
-
-
 
         default:
             $controller = new SiteController();
