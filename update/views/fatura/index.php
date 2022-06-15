@@ -1,4 +1,3 @@
-
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
 
@@ -19,37 +18,12 @@
             <div class="row">
                 <div class="col-12">
                     <h4>
-                        <b> Fatura Nº</b><br>
-                        <small class="float">Date: 2/10/2014</small>
+                        <b>Faturas Emitidas</b><br>
                     </h4>
                 </div>
                 <!-- /.col -->
             </div>
-            <!-- info row -->
-            <div class="row invoice-info">
-                <div class="col-sm-4 invoice-col">
-                    <address>
-                        Empresa Fatura +<br>
-                        Morada<br>
-                        Codigo-Postal/Localidade <br>
-                        Phone: <br>
-                        Email: <br>
-                    </address>
-                </div>
-                <!-- /.col -->
-                <div class="col-sm-1 invoice-col">
 
-                </div>
-                <!-- /.col -->
-                <div class="col-sm-3 invoice-col">
-                    Cliente: button select<br>
-                    Nome Cliente: Joaquim <br>
-                    Codigo-Postal/Localidade: Leiria<br>
-                    NIF:
-                </div>
-                <!-- /.col -->
-            </div>
-            <!-- /.row -->
 
             <!-- Table row -->
             <div class="row">
@@ -57,30 +31,31 @@
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th>Ref</th>
-                            <th>Descrição</th>
-                            <th>Qty</th>
-                            <th>Preço Unidade</th>
-                            <th>Iva</th>
-                            <th>Taxa</th>
-                            <th>Subtotal</th>
-                            <th>Editar</th>
+                            <th>Id</th>
+                            <th>Data</th>
+                            <th>Valor Total</th>
+                            <th>Iva Total</th>
+                            <th>Estado</th>
+                            <th>Localidade</th>
+                            <th>Cliente_ID</th>
+                            <th>Empresa_id</th>
+
                         </tr>
                         </thead>
                         <tbody>
+                        <?php foreach ($faturas as $fatura) { ?>
                         <tr>
-                            <td> </td>
-                            <td>Call of Duty</td>
-                            <td> Adicionar button</td>
-                            <td>El snort</td>
-                            <td>$64.50</td>
-                            <td>.</td>
-                            <td>..</td>
-                            <td><button type="button" class="btn btn-success">✓</button>
+                            <td><?=$fatura->id?></td>
+                            <td><?=$fatura->data?></td>
+                            <td><?=$fatura->valortotal?></td>
+                            <td><?=$fatura->ivatotal?></td>
+                            <td><?=$fatura->estado?></td>
+                            <td><?=$fatura->localidade?></td>
+                            <td><?=$fatura->cliente_id?></td>
+                            <td><?=$fatura->empresa_id?></td>
 
 
-                                <button type="button" class="btn btn-danger">X</button>
-                            </td>
+                            <?php } ?>
                         </tr>
                         </tbody>
                     </table>
@@ -99,50 +74,16 @@
                     </p>
                 </div>
                 <!-- /.col -->
-                <div class="col-6">
-
-
-                    <div class="table-responsive">
-                        <table class="table">
-                            <tr>
-                                <th style="width:50%">Subtotal:</th>
-                                <td>$250.30</td>
-                            </tr>
-                            <tr>
-                                <th>Tava IVA</th>
-                                <td>$10.34</td>
-                            </tr>
-                            <tr>
-                                <th>Total:</th>
-                                <td>$265.24</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <!-- /.col -->
             </div>
-            <!-- /.row -->
-
-            <!-- this row will not appear when printing -->
             <div class="row no-print">
                 <div class="col-12">
-                    <button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
-                        <i class="far fa-credit-card"></i> Emitir
-                    </button>
-
-                    <?php
-                    if(isset($username))
-                    {
-                        echo '<a> Fatura Emitida por <strong>'.$username.'</a>';
-                    }
-                    ?>
-
+                    <a type="button" href="./router.php?c=fatura&a=create" class="btn btn-success">Criar Faturas </a>
                 </div>
             </div>
         </div>
         <!-- /.invoice -->
     </div><!-- /.col -->
-</div><!-- /.row -->
+</body><!-- /.row -->
 
 <!-- jQuery -->
 <script src="public/back/plugins/jquery/jquery.min.js"></script>
@@ -157,5 +98,3 @@
 <link rel="stylesheet" href="public/back/plugins/fontawesome-free/css/all.min.css">
 <!-- Theme style -->
 <link rel="stylesheet" href="public/back/dist/css/adminlte.min.css">
-
-

@@ -1,11 +1,13 @@
 <?php
 require_once './startup/boot.php';
 require_once './controllers/SiteController.php';
-require_once './controllers/LoginController.php';
-require_once './controllers/PlanoController.php';
+require_once './controllers/AuthController.php';
 require_once './controllers/FaturaController.php';
 require_once './controllers/ProdutoController.php';
-require_once './controllers/LinhaFaturaController.php';
+require_once './controllers/BackOfficeController.php';
+require_once './controllers/EmpresaController.php';
+require_once './controllers/UserController.php';
+require_once './controllers/IvaController.php';
 
 if(!isset($_GET['c'], $_GET['a']))
 {
@@ -22,7 +24,7 @@ else
     switch ($c)
     {
         case "login":
-            $controller = new LoginController();
+            $controller = new AuthController();
             switch ($a)
             {
                 case "index":
@@ -46,20 +48,7 @@ else
                     $controller->index();
                     break;
                 case "create":
-                    $controller->create($_GET['id']);
-            }
-            break;
-
-
-        case "linhaFatura":
-            $controller = new LinhaFaturaController();
-            switch ($a)
-            {
-                case "index":
-                    $controller->index();
-                    break;
-                case "create":
-                    $controller->create($_GET['id']);
+                    $controller->create();
             }
             break;
 
@@ -77,17 +66,15 @@ else
                     $controller->store();
             }
             break;
-            
-/*
-        case "book":
-            $controller = new BookController();
-            switch ($a)
-            {
+
+        case "user":
+            $controller = new UserController();
+            switch ($a) {
                 case "index":
                     $controller->index();
                     break;
                 case "show":
-                    $controller ->show($_GET['id']);
+                    $controller->show($_GET['id']);
                     break;
                 case"create":
                     $controller->create();
@@ -95,18 +82,31 @@ else
                 case"store":
                     $controller->store();
                     break;
-                case"edit":
+                case "edit":
                     $controller->edit($_GET['id']);
                     break;
-                case"update":
+                case "update":
                     $controller->update($_GET['id']);
-                    break;
-                case"delete":
-                    $controller->delete($_GET['id']);
                     break;
             }
             break;
-*/
+
+        case "iva":
+            $controller= new IvaController();
+            $controller->index();
+            break;
+
+
+
+        case "backoffice":
+            $controller= new BackOfficeController();
+            $controller->index();
+            break;
+
+        case "empresa":
+            $controller = new EmpresaController();
+            $controller->index();
+            break;
 
         case "site":
             $controller = new SiteController();

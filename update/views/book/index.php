@@ -1,5 +1,5 @@
 <?php
-require_once ('./views/layout/header.php');
+require_once('./views/layoutBo/header.php');
 ?>
 
 <h2 class="text-left top-space">Book Index</h2>
@@ -40,5 +40,5 @@ role="button">New</a>
 
 
 <?php
-require_once ('./views/layout/footer.php');
+require_once('./views/layoutBo/footer.php');
 ?>

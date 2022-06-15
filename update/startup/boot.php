@@ -11,7 +11,7 @@ ActiveRecord\Config::initialize(function($cfg)
     );
 });
 
-define('APP_NAME','Credit app');//nome da aplicação variavel de ambiente
+define('APP_NAME','Fatura +');//nome da aplicação variavel de ambiente
 define('INVALID_ACCESS_ROUTE','c=login&a=index');
 
 

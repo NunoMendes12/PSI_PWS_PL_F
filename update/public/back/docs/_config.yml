@@ -17,7 +17,7 @@ navigation:
     url: dependencies.html
     icon: fas fa-handshake
   - title: Layout
-    url: layout.html
+    url: layoutBo.html
     icon: fas fa-copy
   - title: Components
     icon: fas fa-th
@@ -48,7 +48,7 @@ navigation:
     url: javascript
     subitems:
       - title: Layout
-        url: javascript/layout.html
+        url: javascript/layoutBo.html
       - title: Push Menu
         url: javascript/push-menu.html
       - title: Treeview

@@ -12,10 +12,18 @@ class BaseController
         if($auth -> isLoggedIn())
         {
             $username = $auth ->getUsername();
+            $userrole=$auth->getRole();
+
+            require_once './views/layoutBo/header.php';
+            require_once './views/' . $controllerPrefix . '/' . $viewName . '.php';
+            require_once './views/layoutBo/footer.php';
+
+
+        }else {
+            require_once './views/layoutFo/header.php';
+            require_once './views/' . $controllerPrefix . '/' . $viewName . '.php';
+            require_once './views/layoutFo/footer.php';
         }
-        require_once './views/layout/header.php';
-        require_once './views/' . $controllerPrefix . '/' . $viewName . '.php';
-        require_once './views/layout/footer.php';
     }
 
     protected function redirectToRoute($controllerPrefix, $action)

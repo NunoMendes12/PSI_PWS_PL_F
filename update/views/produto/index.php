@@ -1,4 +1,3 @@
-
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
 
@@ -19,7 +18,7 @@
             <div class="row">
                 <div class="col-12">
                     <h4>
-                        <b> Lista dos Produtos</b><br>
+                        <b> Lista de Produtos</b><br>
                     </h4>
                 </div>
                 <!-- /.col -->
@@ -32,26 +31,29 @@
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th>Ref</th>
-                            <th>Descrição</th>
+                            <th>Id</th>
+                            <th>Referencia</th>
+                            <th>Descricao</th>
                             <th>Preço</th>
                             <th>Stock</th>
-                            <th>Tava de IVA</th>
+                            <th>TaxaIva</th>
+                            <th>Iva_ID</th>
 
                         </tr>
                         </thead>
                         <tbody>
+                        <?php foreach ($produtos as $produto) { ?>
                         <tr>
-                            <td>
-                         <!--       <?=$produto->referencia ?>  -->
-                            </td>
-                            <td>Call of Duty</td>
-                            <td> </td>
-                            <td></td>
-                            <td></td>
+                            <td><?=$produto->id?></td>
+                            <td><?=$produto->referencia?></td>
+                            <td><?=$produto->descricao?></td>
+                            <td><?=$produto->preco?></td>
+                            <td><?=$produto->stock?></td>
+                            <td><?=$produto->taxaiva?></td>
+                            <td><?=$produto->iva_id?></td>
 
 
-                            </td>
+                            <?php } ?>
                         </tr>
                         </tbody>
                     </table>
@@ -94,5 +96,3 @@
 <link rel="stylesheet" href="public/back/plugins/fontawesome-free/css/all.min.css">
 <!-- Theme style -->
 <link rel="stylesheet" href="public/back/dist/css/adminlte.min.css">
-
-

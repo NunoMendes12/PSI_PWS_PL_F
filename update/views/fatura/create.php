@@ -42,8 +42,7 @@
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-3 invoice-col">
-                    <a href="router.php?c=fatura&a=selectCliente&id=<?=$book->id ?>"
-                        class="btn btn-info" role="button">Show</a><br>
+                    Cliente: button select<br>
                     Nome Cliente: Joaquim <br>
                     Codigo-Postal/Localidade: Leiria<br>
                     NIF:
@@ -144,19 +143,5 @@
         <!-- /.invoice -->
     </div><!-- /.col -->
 </div><!-- /.row -->
-
-<!-- jQuery -->
-<script src="public/back/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="public/back/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="public/back/dist/js/adminlte.min.js"></script>
-
-<!-- Google Font: Source Sans Pro -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="public/back/plugins/fontawesome-free/css/all.min.css">
-<!-- Theme style -->
-<link rel="stylesheet" href="public/back/dist/css/adminlte.min.css">
 
 

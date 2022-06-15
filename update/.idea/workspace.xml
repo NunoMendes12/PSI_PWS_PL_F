@@ -37,13 +37,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PSI_PWS_PL_F" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/user" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\ficha07\public" />
+      <recent name="C:\wamp64\www\update\views\user" />
+      <recent name="C:\wamp64\www\update\controllers" />
+      <recent name="C:\wamp64\www\update\models" />
+      <recent name="C:\wamp64\www\update\views\produto" />
+      <recent name="C:\wamp64\www\update\views\empresa" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -89,6 +93,11 @@
       <workItem from="1654785044766" duration="3058000" />
       <workItem from="1654788233270" duration="13000" />
       <workItem from="1654962262381" duration="16441000" />
+      <workItem from="1655220486450" duration="6842000" />
+      <workItem from="1655247231045" duration="2084000" />
+      <workItem from="1655287731168" duration="6436000" />
+      <workItem from="1655304270633" duration="10531000" />
+      <workItem from="1655331957188" duration="4065000" />
     </task>
     <servers />
   </component>

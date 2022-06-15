@@ -10,4 +10,14 @@ class BaseAuthController extends BaseController {
             header('location: ./router.php?'.INVALID_ACCESS_ROUTE);
         }
     }
+
+    protected function loginFilterbyRole($roles=[])
+    {
+        $auth=new Auth();
+        $role = $auth->getRole();
+        $validRole = in_array($role);
+
+        if(!$validRole)
+            header('location: ./router.php?'.INVALID_ACCESS_ROUTE);
+    }
 }

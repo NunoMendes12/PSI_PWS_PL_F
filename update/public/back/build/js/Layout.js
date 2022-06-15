@@ -13,7 +13,7 @@ import $ from 'jquery'
  */
 
 const NAME = 'Layout'
-const DATA_KEY = 'lte.layout'
+const DATA_KEY = 'lte.layoutBo'
 const JQUERY_NO_CONFLICT = $.fn[NAME]
 
 const SELECTOR_HEADER = '.main-header'
@@ -30,7 +30,7 @@ const SELECTOR_PRELOADER = '.preloader'
 
 const CLASS_NAME_SIDEBAR_COLLAPSED = 'sidebar-collapse'
 const CLASS_NAME_SIDEBAR_FOCUSED = 'sidebar-focused'
-const CLASS_NAME_LAYOUT_FIXED = 'layout-fixed'
+const CLASS_NAME_LAYOUT_FIXED = 'layoutBo-fixed'
 const CLASS_NAME_CONTROL_SIDEBAR_SLIDE_OPEN = 'control-sidebar-slide-open'
 const CLASS_NAME_CONTROL_SIDEBAR_OPEN = 'control-sidebar-open'
 const CLASS_NAME_IFRAME_MODE = 'iframe-mode'
@@ -137,7 +137,7 @@ class Layout {
   // Private
 
   _init() {
-    // Activate layout height watcher
+    // Activate layoutBo height watcher
     this.fixLayoutHeight()
 
     if (this._config.loginRegisterAutoHeight === true) {
