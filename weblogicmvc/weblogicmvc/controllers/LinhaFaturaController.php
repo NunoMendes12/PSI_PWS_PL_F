@@ -2,7 +2,7 @@
 
 
 // igual ao chaphters
-
+/*
 class LinhaFaturaController extends BaseAuthController
 {
 

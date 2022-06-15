@@ -11,21 +11,15 @@ require_once './controllers/BaseAuthController.php';
         {
             $faturas = Fatura::all();
             $this->makeView('fatura','index',['faturas'=>$faturas]);
+            require_once './views/fatura/create.php'; //AQUIIII
 
 		}
 
-		public function create($idcliente)
+		public function create()
         {
-            if($idcliente==null){
-                $this->makeView('fatura', 'create');
-
-            }else
-
-            $fatura = new Fatura($_POST);
-
-        
-
-
+            $empresa = Empresa::find();
+            $this->makeView('fatura', 'create', ['empresa'=>$empresa]);
+            //require_once './views/fatura/create.php';
 		}
 
         public function store($idFatura)

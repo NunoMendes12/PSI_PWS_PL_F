@@ -42,7 +42,7 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="#" class="nav-link">Home</a>
+                <a href="./router.php?c=site&a=index" class="nav-link">Home</a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
                 <?php
@@ -98,22 +98,23 @@
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
 
-                    <li class="nav-item">
-                        <a href="pages/widgets.html" class="nav-link">
-                            <i class="nav-icon fas fa-th"></i>
-                            <p>
-                                Produtos
-                            </p>
-                        </a>
                     </li>
                     <li class="nav-item">
-                    <?php
-                    if(isset($username))
-                    {
-                        echo '<a class="nav-link" href="./router.php?c=fatura&a=index">Emitir Faturas</a>';
-                    }
-                    ?>
+                        <?php
+                        if(isset($username))
+                        {
+                            echo '<a class="nav-link" href="./router.php?c=fatura&a=index">Emitir Faturas</a>';
+                        }
+                        ?>
 
+                    </li>
+                    <li class="nav-item">
+                        <?php
+                        if(isset($username))
+                        {
+                            echo '<a class="nav-link" href="./router.php?c=produto&a=index">Produtos</a>';
+                        }
+                        ?>
                     </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
@@ -163,7 +164,7 @@
                             </p>
                         </a>
                     </li>
-
+                </ul>
             </nav>
             <!-- /.sidebar-menu -->
         </div>
