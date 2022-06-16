@@ -21,7 +21,19 @@ class AuthController extends BaseController
             $auth = new Auth();
             if($auth->checkLogin($_POST['name'], $_POST['password']))
             {
-                $this->redirectToRoute('backoffice', 'index');
+                if ($_SESSION['role'] == 'administrador') {
+                    $this->redirectToRoute('backoffice','index');
+
+
+                }
+                if ($_SESSION['role'] == 'cliente') {
+                    $this->redirectToRoute('backoffice','index');
+
+                }
+                if ($_SESSION['role'] == 'funcionario') {
+                    $this->redirectToRoute('backoffice','index');
+
+                }
             }
             else
             {

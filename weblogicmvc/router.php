@@ -9,6 +9,7 @@ require_once './controllers/EmpresaController.php';
 require_once './controllers/UserController.php';
 require_once './controllers/IvaController.php';
 
+
 if(!isset($_GET['c'], $_GET['a']))
 {
     // omissão, enviar para site
@@ -92,10 +93,17 @@ else
             break;
 
         case "iva":
-            $controller= new IvaController();
-            $controller->index();
-            break;
+            $controller = new IvaController();
+            switch ($a) {
+                case "index":
+                    $controller->index();
+                    break;
 
+                case"create":
+                    $controller->create();
+                    break;
+            }
+            break;
 
 
         case "backoffice":

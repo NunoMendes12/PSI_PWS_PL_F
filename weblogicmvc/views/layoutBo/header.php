@@ -1,8 +1,3 @@
-<?php
-require_once './controllers/BaseAuthController.php';
-
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -106,7 +101,7 @@ require_once './controllers/BaseAuthController.php';
 
                     </li>
                     <li class="nav-item">
-                        <a href="router.php?c=fatura&a=create" class="nav-link" target="_blank">
+                        <a href="router.php?c=fatura&a=create" class="nav-link" role="button">
                             <i class="nav-icon fas fa-copy"></i>
                             <p>
                                 Emitir Faturas
