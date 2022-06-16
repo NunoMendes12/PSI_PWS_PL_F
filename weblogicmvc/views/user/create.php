@@ -1,14 +1,5 @@
-<?php 
-     session_id();
-?>
 
-<<<<<<< Updated upstream
-    <form  action="router.php?c=user&a=store" method="post">
 
-   
-=======
-
->>>>>>> Stashed changes
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
@@ -34,43 +25,12 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="username">Username</label>
-<<<<<<< Updated upstream
-                                        <input type="text"  class="form-control" value="<?php if(isset($user)){echo $user->username; }?>">
-=======
                                         <input type="text"  id="username" name="username" placeholder="Username" class="form-control" value="<?php if(isset($user)){echo $user->username; }?>">
 
->>>>>>> Stashed changes
 
                                     </div>
                                     <div class="form-group">
                                         <label for="password">Password</label>
-<<<<<<< Updated upstream
-                                        <input type="text"   class="form-control" value="<?php if(isset($user)){echo $user->password; }?>" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="text" class="form-control" value="<?php if(isset($user)){echo $user->email; }?>" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="telefone">Telefone</label>
-                                        <input type="text" class="form-control"  placeholder="Telefone" value="<?php if(isset($user)){echo $user->telefone; }?>">
-                                    </div>
-                                     <div class="form-group">
-                                        <label for="morada">Morada</label>
-                                        <input type="text" class="form-control" value="<?php if(isset($user)){echo $user->morada; }?>" >
-                                    </div>
-                                     <div class="form-group">
-                                        <label for="codigopostal">Código Postal</label>
-                                        <input type="text" class="form-control" value="<?php if(isset($user)){echo $user->codigopostal; }?>">
-                                    </div>
-                                     <div class="form-group">
-                                        <label for="localidade">Localidade</label>
-                                        <input type="text" class="form-control"value="<?php if(isset($user)){echo $user->localidade; }?>" >
-                                    </div>
-                                       <div class="form-group">
-                                        <label for="role">Role</label>
-                                        <input type="text" class="form-control" value="<?php if(isset($user)){echo $user->role; }?>">
-=======
                                         <input type="text"   class="form-control" placeholder="password" id="password" name="password" value="<?php if(isset($user)){echo $user->password; }?>">
                                     </div>
                                     <div class="form-group">
@@ -101,7 +61,6 @@
                                             <option value="cliente">Cliente</option>
                                             <?php if(isset($user->errors)){ echo $user->errors->on('role');} ?>
                                         </select>
->>>>>>> Stashed changes
                                     </div>
                                 
                                 <!-- /.card-body -->

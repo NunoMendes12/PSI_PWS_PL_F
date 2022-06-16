@@ -22,17 +22,6 @@ class UserController extends BaseAuthController
 
     public function store()
     {
-<<<<<<< Updated upstream
-        $user = new User($_POST);
-        
-       
-        if($user->is_valid()){
-            //$user->save();
-            $this->redirectToRoute('user','index');
-        } else {
-            //redirect to form with data and errors
-           $this->makeView('user','create',['user'=>$user]);
-=======
         if(($_POST['username'] != " "))
         {
             $user = new User($_POST);
@@ -42,7 +31,6 @@ class UserController extends BaseAuthController
             } else{
                 $this-> makeView('user','create');
             }
->>>>>>> Stashed changes
         }
         else{
             $this->makeView('user','create');
