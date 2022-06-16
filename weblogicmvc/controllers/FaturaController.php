@@ -14,6 +14,7 @@ class FaturaController extends BaseAuthController
 
     public function create()
     {
+<<<<<<< Updated upstream
 
             $this->makeView('fatura', 'create');
             $fatura = new Fatura($_POST);
@@ -25,6 +26,11 @@ class FaturaController extends BaseAuthController
 
         $users = User::all();
         $this-> makeView('fatura', 'selectClient', ['users' => $users]);
+=======
+        $empresas = Empresa::find([1]);
+        $this->makeView('fatura','create',['empresas'=>$empresas]);
+    }
+>>>>>>> Stashed changes
 
     }
 }

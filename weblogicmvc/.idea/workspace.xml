@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40439ba3-e6c1-4627-8317-f0ba04f292a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/views/iva/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/layoutBo/admin/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/layoutBo/cliente/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/layoutBo/funcionario/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/layoutBo/headercliente.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/layoutBo/headerfuncionario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layoutBo/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layoutBo/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/FaturaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/FaturaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/fatura/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/fatura/create.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

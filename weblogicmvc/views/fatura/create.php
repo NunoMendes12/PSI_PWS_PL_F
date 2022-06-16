@@ -20,7 +20,10 @@
                 <div class="col-12">
                     <h4>
                         <b> Fatura Nº</b><br>
-                        <small class="float">Date: 2/10/2014</small>
+                        <h5>Data:<?php
+                        $date = date('d-m-Y');
+                        echo $date;
+                            ?></h5>
                     </h4>
                 </div>
                 <!-- /.col -->
@@ -29,11 +32,13 @@
             <div class="row invoice-info">
                 <div class="col-sm-4 invoice-col">
                     <address>
-                        Empresa Fatura +<br>
-                        Morada<br>
-                        Codigo-Postal/Localidade <br>
-                        Phone: <br>
-                        Email: <br>
+                        <b>Nome:</b> <?= $empresas->designacaosocial ?><br>
+                        <b>Telefone:</b> <?= $empresas->telefone ?><br>
+                        <b>Email: </b>  <?= $empresas->email ?> <br>
+                        <b>Morada:</b> <?= $empresas->morada ?><br>
+                        <b>Código-Postal:</b> <?= $empresas->codigopostal ?><br>
+                        <b>Localidade: </b> <?= $empresas->localidade ?><br>
+                        <b>Capital Social:</b> <?= $empresas->capitalsocial ?>
                     </address>
                 </div>
                 <!-- /.col -->
