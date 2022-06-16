@@ -1,5 +1,4 @@
 
-    <form action="router.php?c=produto&a=store" method="post"
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -23,32 +22,38 @@
                             </div>
                             <!-- /.card-header -->
                             <!-- form start -->
-                            <form>
+                            <form action="./router.php?c=produto&a=store" method="post">
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="referencia">Referencia</label>
-                                        <input type="text" class="form-control" id="referencia" placeholder="Referencia">
+                                        <input type="number" class="form-control" id="referencia"  name="referencia" placeholder="Referencia" value="<?php if(isset($produto)){echo $produto->referencia; }?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="descricao">Descricao</label>
-                                        <input type="text" class="form-control" id="descricao" placeholder="Descrição">
+                                        <input type="text" class="form-control" id="descricao" name="descricao" placeholder="Descrição" value="<?php if(isset($produto)){echo $produto->descricao; }?>"
                                     </div>
                                     <div class="form-group">
                                         <label for="preco">Preço</label>
-                                        <input type="text" class="form-control" id="preco" placeholder="Preço">
+                                        <input type="number" class="form-control" id="preco"  name="preco"  placeholder="Preço" value="<?php if(isset($produto)){echo $produto->preco; }?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="stock">Stock</label>
-                                        <input type="text" class="form-control" id="stock" placeholder="Stock">
+                                        <input type="text" class="form-control" id="stock" name="stock" placeholder="Stock" value="<?php if(isset($produto)){echo $produto->stock; }?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="taxaiva">Taxa de IVA</label>
-                                            <select class="form-control">
-                                                <option>option 1</option>
-                                                <option>option 2</option>
-                                                <option>option 3</option>
-                                            </select>
+                                        <select class="form-control" id="taxaiva" name="taxaiva" >
+                                            <?php if(isset($ivas)){
+                                                foreach($ivas as $iva){?>
+                                                    <option value="<?= $iva->id?>"> <?= $iva->percentagem; ?></option>
+                                                <?php }
+                                            }?>
+                                        </select>
                                     </div>
+
+
+
+
 
                                 <!-- /.card-body -->
 
@@ -86,18 +91,6 @@
             </div><!-- /.col -->
         </div><!-- /.row -->
     </form>
-<!-- jQuery -->
-<script src="public/back/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="public/back/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="public/back/dist/js/adminlte.min.js"></script>
 
-<!-- Google Font: Source Sans Pro -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="public/back/plugins/fontawesome-free/css/all.min.css">
-<!-- Theme style -->
-<link rel="stylesheet" href="public/back/dist/css/adminlte.min.css">
 
 

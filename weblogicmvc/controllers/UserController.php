@@ -8,20 +8,21 @@ class UserController extends BaseAuthController
 
 	public function index()
     {
-        //$this->loginFilterByRole('administrador');
+
         $users = User::all();
         $this->makeView('user','index', ['users'=>$users]);
     }
 
     public function create()
     {
-       // $this->loginFilterByRole('administrador');
+
        
         $this->makeView('user','create');
     }
 
     public function store()
     {
+<<<<<<< Updated upstream
         $user = new User($_POST);
         
        
@@ -31,13 +32,29 @@ class UserController extends BaseAuthController
         } else {
             //redirect to form with data and errors
            $this->makeView('user','create',['user'=>$user]);
+=======
+        if(($_POST['username'] != " "))
+        {
+            $user = new User($_POST);
+            if($user->is_valid()){
+                $user->save();
+                $this->redirectToRoute('user','index');
+            } else{
+                $this-> makeView('user','create');
+            }
+>>>>>>> Stashed changes
         }
+        else{
+            $this->makeView('user','create');
+        }
+
+
+
     }
 
     public function edit($id)
     {
-        $users = User::find([$id]);
-
+        $user = User::find([$id]);
         if (is_null($user)) {
             //TODO redirect to standard error page
         } else {

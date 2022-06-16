@@ -17,6 +17,11 @@ class User extends \ActiveRecord\Model
 	 	   static $validates_numericality_of = array(
         	array('telefone', 'only_integer' => true)
     );
+
+    static $validates_uniqueness_of = array(
+        array('username', 'message' => 'Este username ja existe'),
+    );
+
 }
 
 

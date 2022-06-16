@@ -19,11 +19,11 @@
 
                 <div class="card card-primary">
                     <div class="card-header">
-                        <h3 class="card-title">Inserir Dados</h3>
+                        <h3 class="card-title">Editar IVA</h3>
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
-                    <form action="router.php?c=iva&a=store" method="post">
+                    <form action="router.php?c=iva&a=update&id=<?=$iva->id?>" method="post">
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Percentagem</label>
@@ -39,8 +39,9 @@
                                     <option disabled selected value> escolha uma opção </option>
                                     <option value="sim">Sim</option>
                                     <option value="nao">Nao</option>
+                                    <?php if(isset($iva->errors)){ echo $iva->errors->on('vigor');} ?>
 
-                                <?php if(isset($iva->errors)){ echo $iva->errors->on('vigor');} ?>
+                                    <input type="text" disabled class="form-control" value="Taxa IVA atual: <?= $iva->vigor ?> ">
                                 </select>
                             </div>
 

@@ -2,9 +2,13 @@
      session_id();
 ?>
 
+<<<<<<< Updated upstream
     <form  action="router.php?c=user&a=store" method="post">
 
    
+=======
+
+>>>>>>> Stashed changes
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
@@ -30,11 +34,17 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="username">Username</label>
+<<<<<<< Updated upstream
                                         <input type="text"  class="form-control" value="<?php if(isset($user)){echo $user->username; }?>">
+=======
+                                        <input type="text"  id="username" name="username" placeholder="Username" class="form-control" value="<?php if(isset($user)){echo $user->username; }?>">
+
+>>>>>>> Stashed changes
 
                                     </div>
                                     <div class="form-group">
                                         <label for="password">Password</label>
+<<<<<<< Updated upstream
                                         <input type="text"   class="form-control" value="<?php if(isset($user)){echo $user->password; }?>" >
                                     </div>
                                     <div class="form-group">
@@ -60,6 +70,38 @@
                                        <div class="form-group">
                                         <label for="role">Role</label>
                                         <input type="text" class="form-control" value="<?php if(isset($user)){echo $user->role; }?>">
+=======
+                                        <input type="text"   class="form-control" placeholder="password" id="password" name="password" value="<?php if(isset($user)){echo $user->password; }?>">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="text" class="form-control" placeholder="Email" id="email" name="email" value="<?php if(isset($user)){echo $user->email; }?>">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telefone">Telefone</label>
+                                        <input type="text" class="form-control"  placeholder="Telefone"  id="telefone" name="telefone" value="<?php if(isset($user)){echo $user->telefone; }?>">
+                                    </div>
+                                     <div class="form-group">
+                                        <label for="morada">Morada</label>
+                                        <input type="text" class="form-control" placeholder="Morada" id="morada" name="morada" value="<?php if(isset($user)){echo $user->morada; }?>">
+                                    </div>
+                                     <div class="form-group">
+                                        <label for="codigopostal">Código Postal</label>
+                                        <input type="text" class="form-control" placeholder="Codigo-Postal" id="codigopostal" name="codigopostal" value="<?php if(isset($user)){echo $user->codigopostal; }?>">
+                                    </div>
+                                     <div class="form-group">
+                                        <label for="localidade">Localidade</label>
+                                        <input type="text" class="form-control" placeholder="Localidade" id="localidade" name="localidade" value="<?php if(isset($user)){echo $user->localidade; }?>">
+                                     </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Role</label>
+                                        <select class="form-group" id="role" name="role">
+                                            <option value="administrador">Administrador</option>
+                                            <option value="funcionario">Funcionario</option>
+                                            <option value="cliente">Cliente</option>
+                                            <?php if(isset($user->errors)){ echo $user->errors->on('role');} ?>
+                                        </select>
+>>>>>>> Stashed changes
                                     </div>
                                 
                                 <!-- /.card-body -->
@@ -98,17 +140,4 @@
             </div><!-- /.col -->
         </div><!-- /.row -->
     </form>
-<!-- jQuery -->
-<script src="public/back/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="public/back/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="public/back/dist/js/adminlte.min.js"></script>
-
-<!-- Google Font: Source Sans Pro -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="public/back/plugins/fontawesome-free/css/all.min.css">
-<!-- Theme style -->
-<link rel="stylesheet" href="public/back/dist/css/adminlte.min.css">
 
