@@ -24,8 +24,9 @@ class UserController extends BaseAuthController
     {
         $user = new User($_POST);
         
+       
         if($user->is_valid()){
-            $user->save();
+            //$user->save();
             $this->redirectToRoute('user','index');
         } else {
             //redirect to form with data and errors

@@ -50,7 +50,11 @@ else
                     break;
                 case "create":
                     $controller->create();
-            }
+                    break;
+                case "selectClient":
+                    $controller->selectClient();
+                    break;
+            }       
             break;
 
         case "produto":
@@ -65,6 +69,7 @@ else
                     break;
                 case "store":
                     $controller->store();
+                    break;
             }
             break;
 

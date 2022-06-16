@@ -15,12 +15,16 @@ class FaturaController extends BaseAuthController
     public function create()
     {
 
-
             $this->makeView('fatura', 'create');
             $fatura = new Fatura($_POST);
 
-
-
     }
 
+    public function selectClient()
+    {
+
+        $users = User::all();
+        $this-> makeView('fatura', 'selectClient', ['users' => $users]);
+
+    }
 }

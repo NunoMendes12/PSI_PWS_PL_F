@@ -1,6 +1,8 @@
+<?php 
+     session_id();
+?>
 
-
-    <form action="router.php?c=user&a=store" method="post" >
+    <form  action="router.php?c=user&a=store" method="post">
 
    
         <div class="content-wrapper">
@@ -24,40 +26,40 @@
                             </div>
                             <!-- /.card-header -->
                             <!-- form start -->
-                            <form >
+                            <form action="router.php?c=user&a=store" method="post" >
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="username">Username</label>
-                                        <input type="text"  class="form-control">
+                                        <input type="text"  class="form-control" value="<?php if(isset($user)){echo $user->username; }?>">
 
                                     </div>
                                     <div class="form-group">
                                         <label for="password">Password</label>
-                                        <input type="text"   class="form-control" >
+                                        <input type="text"   class="form-control" value="<?php if(isset($user)){echo $user->password; }?>" >
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input type="text" class="form-control" >
+                                        <input type="text" class="form-control" value="<?php if(isset($user)){echo $user->email; }?>" >
                                     </div>
                                     <div class="form-group">
                                         <label for="telefone">Telefone</label>
-                                        <input type="text" class="form-control"  placeholder="Telefone">
+                                        <input type="text" class="form-control"  placeholder="Telefone" value="<?php if(isset($user)){echo $user->telefone; }?>">
                                     </div>
                                      <div class="form-group">
                                         <label for="morada">Morada</label>
-                                        <input type="text" class="form-control"  >
+                                        <input type="text" class="form-control" value="<?php if(isset($user)){echo $user->morada; }?>" >
                                     </div>
                                      <div class="form-group">
                                         <label for="codigopostal">Código Postal</label>
-                                        <input type="text" class="form-control" >
+                                        <input type="text" class="form-control" value="<?php if(isset($user)){echo $user->codigopostal; }?>">
                                     </div>
                                      <div class="form-group">
                                         <label for="localidade">Localidade</label>
-                                        <input type="text" class="form-control" >
+                                        <input type="text" class="form-control"value="<?php if(isset($user)){echo $user->localidade; }?>" >
                                     </div>
                                        <div class="form-group">
                                         <label for="role">Role</label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" value="<?php if(isset($user)){echo $user->role; }?>">
                                     </div>
                                 
                                 <!-- /.card-body -->

@@ -2,7 +2,7 @@
 
 class BaseController
 {
-    protected function makeView($controllerPrefix,$viewName,array $params=[])
+    public function makeView($controllerPrefix,$viewName,array $params=[])
     {
 
         extract($params);
@@ -41,7 +41,7 @@ class BaseController
 
     }
 
-    protected function redirectToRoute($controllerPrefix, $action)
+    public function redirectToRoute($controllerPrefix, $action)
     {
         header('Location: ./router.php?c=' . $controllerPrefix . '&a=' . $action);
     }
