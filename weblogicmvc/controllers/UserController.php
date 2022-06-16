@@ -1,4 +1,4 @@
-<?php  
+8<?php  
 
 require_once './models/User.php';
 require_once './controllers/BaseAuthController.php'; 

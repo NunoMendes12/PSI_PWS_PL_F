@@ -42,7 +42,10 @@
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-3 invoice-col">
-                    Cliente: button select<br>
+                    <div class="row no-print">
+                <div class="col-12">
+                    <a type="button" href="./router.php?c=fatura&a=selectClient" class="btn btn-success">Selecionar Clientes </a>
+                </div><br>
                     Nome Cliente: Joaquim <br>
                     Codigo-Postal/Localidade: Leiria<br>
                     NIF:

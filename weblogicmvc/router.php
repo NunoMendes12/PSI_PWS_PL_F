@@ -50,6 +50,9 @@ else
                     break;
                 case "create":
                     $controller->create();
+                case "selectClient":
+                    $controller->selectClient();
+                    break;
             }
             break;
 
