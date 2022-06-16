@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40439ba3-e6c1-4627-8317-f0ba04f292a9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/FaturaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/FaturaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/fatura/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/fatura/create.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +113,7 @@
       <workItem from="1655304270633" duration="10531000" />
       <workItem from="1655331957188" duration="4065000" />
       <workItem from="1655379042628" duration="4209000" />
+      <workItem from="1655400494759" duration="48000" />
     </task>
     <servers />
   </component>
