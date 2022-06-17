@@ -53,15 +53,33 @@
                                         <label for="localidade">Localidade</label>
                                         <input type="text" class="form-control" placeholder="Localidade" id="localidade" name="localidade" value="<?php if(isset($user)){echo $user->localidade; }?>">
                                      </div>
-                                    <div class="form-group">
+                                     <?php if ($_SESSION['role'] == 'funcionario') { ?>
+
+                                              <div class="form-group">
                                         <label for="exampleInputPassword1">Role</label>
                                         <select class="form-group" id="role" name="role">
-                                            <option value="administrador">Administrador</option>
-                                            <option value="funcionario">Funcionario</option>
                                             <option value="cliente">Cliente</option>
                                             <?php if(isset($user->errors)){ echo $user->errors->on('role');} ?>
                                         </select>
                                     </div>
+
+                                         <?php } ?>
+
+
+                                    <?php if ($_SESSION['role'] == 'administrador') { ?>
+
+                                              <div class="form-group">
+                                        <label for="exampleInputPassword1">Role</label>
+                                        <select class="form-group" id="role" name="role">
+                                            <option value="cliente">Cliente</option>
+                                            <option value="funcionario">Funcionario </option>
+                                            <option value="administrador">Administrador </option>
+                                            <?php if(isset($user->errors)){ echo $user->errors->on('role');} ?>
+                                        </select>
+                                    </div>
+
+                                         <?php } ?>
+
                                 
                                 <!-- /.card-body -->
 
