@@ -8,6 +8,7 @@ require_once './controllers/BackOfficeController.php';
 require_once './controllers/EmpresaController.php';
 require_once './controllers/UserController.php';
 require_once './controllers/IvaController.php';
+require_once './controllers/InfoController.php';
 
 
 if(!isset($_GET['c'], $_GET['a']))
@@ -137,6 +138,11 @@ else
 
         case "site":
             $controller = new SiteController();
+            $controller->index();
+            break;
+
+        case "info":
+            $controller = new InfoController();
             $controller->index();
             break;
 

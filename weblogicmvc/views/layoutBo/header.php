@@ -27,6 +27,9 @@
                 <a href="./router.php?c=backoffice&a=index" class="nav-link">Home</a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
+                <a href="./router.php?c=info&a=index" class="nav-link">Dashboard </a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
                 <?php
                 if(isset($username))
                 {
@@ -164,7 +167,9 @@
             <!-- /.sidebar-menu -->
         </div>
         <!-- /.sidebar -->
-    </aside>
+
+
+
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
