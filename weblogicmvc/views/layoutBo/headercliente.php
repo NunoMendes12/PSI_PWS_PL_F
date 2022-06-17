@@ -82,21 +82,14 @@
                              with font-awesome or any other icon font library -->
 
                         <li class="nav-item">
-                            <a href="" class="nav-link" role="button">
+                            <a href="./router.php?c=fatura&a=index" class="nav-link" role="button">
                                 <i class="nav-icon fas fa-copy"></i>
                                 <p>
                                     Lista das Faturas
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link" role="button">
-                                <i class="nav-icon fas fa-copy"></i>
-                                <p>
-                                    Fatura Individual
-                                </p>
-                            </a>
-                        </li>
+
 
                     </ul>
                 </nav>

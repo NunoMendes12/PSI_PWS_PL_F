@@ -57,7 +57,8 @@
                             <td><?=$user->localidade?></td>
                              <td><?=$user->role?></td>
                             <td><a type="button" href="./router.php?c=user&a=edit&id=<?=$user->id?>" class="btn btn-warning">Edit</a></td>
-                             <?php } ?>
+                            <td> <a type="button" href="router.php?c=user&a=show&id=<?=$user->id ?>" class="btn btn-warning" >Show</a></td>
+                            <?php } ?>
 
                         </tr>
                         </tbody>

@@ -28,6 +28,25 @@ class FaturaController extends BaseAuthController
         $this->makeView('fatura','create',['empresas'=>$empresas]);
     }
 
+    public function store($id)
+    {
+        $fatura = new Fatura($_POST);
+        $date = Carbon::now(); // obter data
 
-    
+        $fatura->data =  $date;
+        $fatura->valortotal = "0";
+        $fatura->ivatotal = "0";
+        $fatura->estado = 'em lancamento';
+        $fatura->cliente_id =$id;
+
+        if ($fatura->is_valid()) {
+            $fatura->save();
+            $this->redirectToRoute('linhaFatura', 'create'); /*['id' => $fatura->id]); */
+         } else {
+            $this->makeView('fatura', 'create', ['faturas' => $fatura]);
+        }
+    }
+
+
+
 }

@@ -54,6 +54,7 @@
                         <tbody>
                         <?php foreach ($users as $user) { ?>
                         <tr>
+                            <?php if ($user->role == 'cliente') { ?>
                             <td><?=$user->id?></td>
                             <td><?=$user->username?></td>
                             <td><?=$user->password?> </td>
@@ -63,8 +64,8 @@
                             <td><?=$user->codigopostal?></td>
                             <td><?=$user->localidade?></td>
                              <td><?=$user->role?></td>
-                             <td> <a href="./router.php?c=fatura&a=create&id=<?=$user->id?>" class="btn-sm text-decoration-none btn-warning" >Selecionar</a></td>
-                             <?php } ?>
+                             <td> <a href="./router.php?c=fatura&a=store&id=<?=$user->id?>" class="btn-sm text-decoration-none btn-warning" >Selecionar</a></td>
+                             <?php }  }?>
                         </tr>
                         </tbody>
                     </table>

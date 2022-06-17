@@ -47,10 +47,8 @@
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-3 invoice-col">
+                    Nome Cliente:<br>
                      <a type="button" href="./router.php?c=fatura&a=selectClient" class="btn btn-warning">Selecionar Cliente</a><br>
-                    Nome Cliente: Joaquim <br>
-                    Codigo-Postal/Localidade: Leiria<br>
-                    NIF:
                 </div>
                 <!-- /.col -->
             </div>
@@ -75,12 +73,12 @@
                         <tbody>
                         <tr>
                             <td> </td>
-                            <td>Call of Duty</td>
-                            <td> Adicionar button</td>
-                            <td>El snort</td>
-                            <td>$64.50</td>
-                            <td>.</td>
-                            <td>..</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
                             <td><button type="button" class="btn btn-success">✓</button>
 
 
@@ -111,15 +109,15 @@
                         <table class="table">
                             <tr>
                                 <th style="width:50%">Subtotal:</th>
-                                <td>$250.30</td>
+                                <td> </td>
                             </tr>
                             <tr>
                                 <th>Tava IVA</th>
-                                <td>$10.34</td>
+                                <td> </td>
                             </tr>
                             <tr>
                                 <th>Total:</th>
-                                <td>$265.24</td>
+                                <td> </td>
                             </tr>
                         </table>
                     </div>

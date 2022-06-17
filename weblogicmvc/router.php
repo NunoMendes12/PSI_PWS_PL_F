@@ -9,6 +9,7 @@ require_once './controllers/EmpresaController.php';
 require_once './controllers/UserController.php';
 require_once './controllers/IvaController.php';
 require_once './controllers/InfoController.php';
+require_once './controllers/LinhaFaturaController.php';
 
 
 if(!isset($_GET['c'], $_GET['a']))
@@ -57,6 +58,34 @@ else
                     break;
             }       
             break;
+
+        case 'linhaFatura':
+            $controller = new LinhaFaturaController();
+            switch ($a) {
+                case'create':
+                    if(isset($_GET['idProduto']))
+                    {
+                        $controller->create($_GET['id'], $_GET['idProduto']);
+                    }else
+                    {
+                        $controller->create($_GET['id'], null);
+                    }
+                    break;
+                case'store':
+                    $controller->store($_GET['idFatura'], $_GET['idProduto']);
+                    break;
+                case'edit':
+                    $controller->edit($_GET['idLinhaFatura'], $_GET['idFatura'],  $_GET['idProduto']);
+                    break;
+                case'update':
+                    $controller->update($_GET['idLinhaFatura'], $_GET['idFatura']);
+                    break;
+                case'delete':
+                    $controller->delete($_GET['idLinhaFatura'], $_GET['idFatura']);
+                    break;
+            }
+            break;
+
 
         case "produto":
             $controller = new ProdutoController();
